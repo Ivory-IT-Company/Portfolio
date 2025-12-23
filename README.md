@@ -62,7 +62,7 @@ We are interested in working on impactful projects and long-term collaborations 
 
 ## 📬 Contact
 
-- 📧 **Email:** info@ivoryitcompany.com  
+- 📧 **Email:**  ivory.it.company@gmail.com
 - 🌍 **Website:** Coming Soon  
 - 💼 **GitHub Organization:** https://github.com/ivory-it-company  
 
