@@ -6,10 +6,10 @@ const Header = () => {
          <div className="flex flex-row justify-between text-center  items-center">
             <div>
                <a href="">
-                  <h4 className="font-medium text-lg">Ivory</h4>
+                  <h4 className="font-semibold text-lg">Ivory</h4>
                </a>
             </div>
-            <div>
+            <div className='max-md:hidden'>
                <nav className="flex gap-10">
                   <ul className="flex flex-row gap-9 font-medium">
                      <li>Home</li>
