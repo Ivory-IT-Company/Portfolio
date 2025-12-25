@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
    return (
-      <header className="px-10 pt-4 pb-2.5">
+      <header className="px-10 pt-4 pb-2.5 border-b border-gray-300">
          <div className="flex flex-row justify-between text-center  items-center">
             <div>
                <a href="">

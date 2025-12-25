@@ -13,8 +13,8 @@ const Footer = () => {
    let getyear = new Date().getFullYear();
 
    return (
-      <>
-         <div className="py-8 font-serif">
+      <footer className='border-t border-gray-200'>
+         <div className="pt-12 pb-8 font-serif">
             <div className="flex flex-row max-md:flex-col max-md:px-2 gap-3 px-28 pb-8">
                <div className="basis-1/3">
                   {/* for the company's name and others */}
@@ -89,7 +89,7 @@ const Footer = () => {
                                  href="https://github.com/Ivory-IT-Company"
                                  target="_blank"
                                  rel="noopener noreferrer">
-                                 <Facebook size={24} fill />
+                                 <Facebook size={24} color='blue' fill='blue' />
                               </a>
                            </span>
                            <span>
@@ -97,7 +97,7 @@ const Footer = () => {
                                  href="https://github.com/Ivory-IT-Company"
                                  target="_blank"
                                  rel="noopener noreferrer">
-                                 <Twitter size={24} fill />
+                                 <Twitter className='fill-blue-300' color='fill-blue-300' size={26} />
                               </a>
                            </span>
                         </div>
@@ -114,7 +114,7 @@ const Footer = () => {
                </span>
             </div>
          </div>
-      </>
+      </footer>
    );
 };
 
