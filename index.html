@@ -1,13 +1,38 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth md:scroll-auto dark">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ivory-portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth md:scroll-auto">
+   <head>
+      <meta charset="UTF-8" />
+      <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>ivory-portfolio</title>
+   </head>
+   <body>
+      <div class="" id="root"></div>
+      <script type="module" src="/src/main.jsx"></script>
+      <script src="/src/components/theme/theme.js"></script>
+      <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          initializeDarkMode();
+});
+         function initializeDarkMode() {
+            const savedTheme = localStorage.getItem('theme');
+            console.log(savedTheme)
+
+            if (savedTheme === 'dark') {
+               document.documentElement.classList.add('dark');
+               console.log(document.documentElement.classList)
+            } else if (savedTheme === 'light') {
+               document.documentElement.classList.remove('dark');
+            } else if (
+               window.matchMedia('(prefers-color-scheme: dark)').matches
+            ) {
+               document.documentElement.classList.add('dark');
+            } else {
+               document.documentElement.classList.remove('dark');
+            }
+         }
+
+         
+      </script> -->
+   </body>
 </html>

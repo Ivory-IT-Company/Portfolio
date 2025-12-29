@@ -4,6 +4,7 @@ import Header from './components/common/Header';
 import Home from './components/landing/Home';
 import Page404 from './components/error/Page404';
 import AboutPage from './components/about/AboutCompany';
+import Team from './components/team/Team';
 
 function App() {
    return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="home" element={<Home />} />
             <Route path="*" element={<Page404 />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="team" element={<Team />} />
          </Routes>
 
          <Footer />

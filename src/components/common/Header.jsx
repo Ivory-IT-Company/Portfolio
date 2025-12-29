@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { List } from 'lucide-react';
+import ToggleButton from '../Toggle/ToggleButton';
 
 const Header = () => {
    const navItems = [
@@ -14,19 +15,20 @@ const Header = () => {
       },
       {
          text: 'Services',
-         link: '',
+         link: 'services',
       },
       {
          text: 'Team',
-         link: '',
+         link: 'team',
       },
       {
          text: 'Contact',
-         link: '',
+         link: 'contact',
       },
    ];
+
    return (
-      <header className="px-10 pt-4 pb-2.5 max-md:px-2 border-b border-gray-300">
+      <header className="px-10 select-none pt-4 pb-2.5 max-md:px-2 border-b border-gray-300">
          <div className="flex flex-row justify-between text-center  items-center">
             <div>
                <a href="/home">
@@ -44,11 +46,8 @@ const Header = () => {
                         </a>
                      ))}
                   </ul>
-                  {/* <button className="bg-blue-500 px-4 py-1 rounded-xl">
-                     <span className="text-amber-50 text-base">
-                        Get started
-                     </span>
-                  </button> */}
+
+                  <ToggleButton />
                </nav>
             </div>
 

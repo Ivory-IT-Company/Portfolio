@@ -3,7 +3,7 @@ import { BriefcaseBusiness, Sparkles } from 'lucide-react';
 const Home = () => {
    return (
       <>
-         <div className="flex flex-row gap-2 items-center  max-md:flex-col  h-screen justify-center px-1 lg:px-25">
+         <div className="flex flex-row gap-2 items-center max-lg:flex-col max-lg:h-[760px] h-screen justify-center px-1 lg:px-25">
             {/* left: will contain some basic info */}
             <div className="lg:basis-[50%]">
                <div className="flex flex-col gap-6 max-md:px-2.5">
