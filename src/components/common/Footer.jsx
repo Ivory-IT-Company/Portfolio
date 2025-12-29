@@ -1,118 +1,116 @@
 import React from 'react';
-import {
-   Facebook,
-   Github,
-   Mail,
-   MapPin,
-   Phone,
-   Twitter,
-   X,
-} from 'lucide-react';
+import { Facebook, Github, Mail, MapPin, Phone, Twitter } from 'lucide-react';
+
+const quickLinks = [
+   { name: 'Home', link: 'home' },
+   { name: 'About', link: 'about' },
+   { name: 'Services', link: 'services' },
+   { name: 'Team', link: 'team' },
+];
+
+const contacts = [
+   {
+      icon: <Mail size={18} className="text-indigo-500" />,
+      text: 'ivory.it.company@gmail.com',
+   },
+   {
+      icon: <Phone size={18} className="text-indigo-500" />,
+      text: '090 2419-12-88',
+   },
+   {
+      icon: <MapPin size={18} className="text-indigo-500" />,
+      text: 'Kwara State, Nigeria',
+   },
+];
+
+const socials = [
+   {
+      icon: <Github size={22} />,
+      href: 'https://github.com/Ivory-IT-Company',
+      label: 'GitHub',
+   },
+   {
+      icon: <Facebook size={22} className="text-blue-600" />,
+      href: 'https://facebook.com',
+      label: 'Facebook',
+   },
+   {
+      icon: <Twitter size={22} className="text-sky-500" />,
+      href: 'https://twitter.com',
+      label: 'Twitter',
+   },
+];
 
 const Footer = () => {
-   let getyear = new Date().getFullYear();
+   const currentYear = new Date().getFullYear();
 
    return (
-      <footer className='border-t border-gray-200'>
-         <div className="pt-12 pb-8 font-serif">
-            <div className="flex flex-row max-md:flex-col max-md:px-2 gap-3 px-28 pb-8">
-               <div className="basis-1/3">
-                  {/* for the company's name and others */}
+      <footer className="border-t border-gray-200 font-serif">
+         <div className="px-6 pt-12 pb-8">
+            <div className="flex flex-col md:px-28 md:flex-row gap-8 pb-8">
+               {/* Brand */}
+               <div className="md:basis-1/3">
+                  <h4 className="text-2xl font-bold text-blue-500">Ivory</h4>
+                  <p className="italic bg-gradient-to-r from-indigo-500 to-teal-400 bg-clip-text text-transparent font-medium">
+                     Building modern digital products for growing businesses
+                  </p>
+               </div>
+
+               {/* Links */}
+               <div className="md:basis-2/3 flex flex-col md:flex-row justify-between gap-6">
+                  <nav>
+                     <h4 className="text-lg font-bold pb-2">Quick Links</h4>
+                     <ul className="space-y-1">
+                        {quickLinks.map((link) => (
+                           <li key={link.link}>
+                              <a
+                                 href={link.link}
+                                 className="hover:text-blue-400 hover:underline transition">
+                                 {link.name}
+                              </a>
+                           </li>
+                        ))}
+                     </ul>
+                  </nav>
+
+                  {/* Contact */}
                   <div>
-                     <h4 className="text-2xl text-blue-500 font-bold">Ivory</h4>
-                     <span className="italic bg-gradient-to-r from-indigo-500 to-teal-400 bg-clip-text text-transparent font-medium">
-                        Building modern digital products for growing businesses
-                     </span>
+                     <h4 className="text-lg font-bold pb-2">Contact</h4>
+                     <ul className="space-y-2">
+                        {contacts.map((item, index) => (
+                           <li key={index} className="flex items-center gap-2">
+                              {item.icon}
+                              <span>{item.text}</span>
+                           </li>
+                        ))}
+                     </ul>
                   </div>
-               </div>
 
-               <div className="basis-2/3">
-                  <div className="flex flex-row justify-between max-md:flex-col max-md:gap-3.5">
-                     <div>
-                        <h4 className="text-lg font-bold pb-1.5">
-                           Quick Links
-                        </h4>
-                        <ul className="font-normal text-base max-md:flex max-md:gap-2.5 ">
-                           <li>
-                              <span className=" hover:text-blue-300 hover:underline">
-                                 Home
-                              </span>
-                           </li>
-                           <li>
-                              <span className=" hover:text-blue-300 hover:underline">
-                                 About
-                              </span>
-                           </li>
-                           <li>
-                              <span className=" hover:text-blue-300 hover:underline">
-                                 Services
-                              </span>
-                           </li>
-                           <li>
-                              <span className=" hover:text-blue-300 hover:underline">
-                                 Team
-                              </span>
-                           </li>
-                        </ul>
-                     </div>
-
-                     <div>
-                        <h4 className="text-lg font-bold pb-1.5">Contact</h4>
-                        <ul>
-                           <li className="flex items-center gap-2.5">
-                              <Mail color="#6366f1" size={18} />
-                              <span>ivory.it.company@gmail.com</span>
-                           </li>
-                           <li className="flex items-center gap-2.5">
-                              <Phone size={18} color="#6366f1" />
-                              <span>090 2419-12-88</span>
-                           </li>
-                           <li className="flex items-center gap-2.5">
-                              <MapPin color="#6366f1" size={18} />
-                              <span>Kwara state, Nigeria</span>
-                           </li>
-                        </ul>
-                     </div>
-                     <div>
-                        <h4 className="text-lg font-bold pb-1.5">Follow Us</h4>
-                        <div className="flex gap-2">
-                           <span>
-                              <a
-                                 href="https://github.com/Ivory-IT-Company"
-                                 target="_blank"
-                                 rel="noopener noreferrer">
-                                 <Github size={24} />
-                              </a>
-                           </span>
-                           <span>
-                              <a
-                                 href="https://github.com/Ivory-IT-Company"
-                                 target="_blank"
-                                 rel="noopener noreferrer">
-                                 <Facebook size={24} color='blue' fill='blue' />
-                              </a>
-                           </span>
-                           <span>
-                              <a
-                                 href="https://github.com/Ivory-IT-Company"
-                                 target="_blank"
-                                 rel="noopener noreferrer">
-                                 <Twitter className='fill-blue-300' color='fill-blue-300' size={26} />
-                              </a>
-                           </span>
-                        </div>
+                  {/* Socials */}
+                  <div>
+                     <h4 className="text-lg font-bold pb-2">Follow Us</h4>
+                     <div className="flex gap-3">
+                        {socials.map(({ icon, href, label }) => (
+                           <a
+                              key={label}
+                              href={href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label={label}
+                              className="hover:scale-110 transition-transform">
+                              {icon}
+                           </a>
+                        ))}
                      </div>
                   </div>
                </div>
             </div>
-            {/* <hr className=''/> */}
-            <div class="flex-grow border-t border-gray-300"></div>
-            <div className="text-center tracking-wide mt-8">
-               <span>
-                  {' '}
-                  &copy; {getyear} Ivory. Built with &hearts; for startups{' '}
-               </span>
-            </div>
+
+            <hr className="border-gray-300" />
+
+            <p className="text-center mt-6 tracking-wide text-sm">
+               &copy; {currentYear} Ivory. Built with ❤️ for startups.
+            </p>
          </div>
       </footer>
    );

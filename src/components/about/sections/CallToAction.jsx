@@ -1,0 +1,19 @@
+const CallToAction = () => {
+   return (
+      <section className="px-6 md:px-28 py-16 text-center bg-gray-50">
+         <h2 className="text-3xl font-bold mb-4">
+            Ready to build something great?
+         </h2>
+         <p className="text-gray-600 mb-6">
+            Let’s turn your idea into a powerful digital product.
+         </p>
+         <a
+            href="/contact"
+            className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+            Contact Us
+         </a>
+      </section>
+   );
+};
+
+export default CallToAction;
