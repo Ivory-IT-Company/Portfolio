@@ -1,8 +1,7 @@
 import React from 'react';
-import { Facebook, Github, Mail, MapPin, Phone, Twitter } from 'lucide-react';
-import { socials } from './SocialIcons';
+import { Mail, MapPin, Phone } from 'lucide-react';
+import { socialIcons } from './SocialIcons';
 
-socials
 const quickLinks = [
    { name: 'Home', link: 'home' },
    { name: 'About', link: 'about' },
@@ -25,33 +24,9 @@ const contacts = [
    },
 ];
 
-// const socials = [
-//    {
-//       icon: <Github size={22} className="w-5 h-5" />,
-//       href: 'https://github.com/Ivory-IT-Company',
-//       label: 'GitHub',
-//    },
-//    {
-//       icon: (
-//          <Facebook
-//             size={22}
-//             fill="currentColor"
-//             // className="text-blue-600"
-//          />
-//       ),
-//       href: 'https://facebook.com',
-//       label: 'Facebook',
-//    },
-//    {
-//       icon: <Twitter size={22} className="text-sky-500" />,
-//       href: 'https://twitter.com',
-//       label: 'Twitter',
-//    },
-// ];
-
 const Footer = () => {
+   console.log(socialIcons);
    const currentYear = new Date().getFullYear();
-
    return (
       <>
          <footer className="bg-neutral-primary-soft">
@@ -90,7 +65,7 @@ const Footer = () => {
                            Follow us
                         </h2>
                         <ul className="text-body font-medium">
-                           {socials.map(({ href, label }) => (
+                           {socialIcons.map(({ href, label }) => (
                               <li className="mb-4">
                                  <a
                                     key={label}
@@ -107,7 +82,7 @@ const Footer = () => {
                      </div>
                      <div>
                         <h2 className="mb-6 text-sm font-semibold text-heading uppercase">
-                           Legal
+                           Contact
                         </h2>
                         <ul className="text-body font-medium">
                            {contacts.map((item, index) => (
@@ -132,35 +107,14 @@ const Footer = () => {
                      . All Rights Reserved.
                   </span>
                   <div className="flex mt-4 sm:justify-center sm:mt-0">
-                     {/* {socials.map(({ icon, href, label }) => (
-                        <a
-                           key={label}
-                           href={href}
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label={label}
-                           className="hover:scale-110 transition-transform text-body hover:text-heading ms-5">
-                           {icon}
-                        </a>
-                     ))} */}
-                     {socials.map((val) => (
+                     {socialIcons.map((val) => (
                         <a
                            href={val.href}
                            className="text-body hover:text-heading  ms-5">
-                           <svg
-                              className="w-5 h-5"
-                              aria-hidden="true"
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              fill="currentColor"
-                              viewBox="0 0 24 24">
-                              {val.icon}
-                           </svg>
+                           {val.icon}
                            <span className="sr-only">{val.label}</span>
                         </a>
                      ))}
-                     
                   </div>
                </div>
             </div>
