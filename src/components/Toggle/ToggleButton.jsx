@@ -1,27 +1,37 @@
-import { toggleDarkMode } from "./toggle";
+import { toggleDarkMode } from './toggle';
+import { useState, useEffect } from 'react';
 
 const ToggleButton = () => {
+   const [isDark, setIsDark] = useState(
+      document.documentElement.classList.contains('dark')
+   );
+
+   useEffect(() => {
+      document.documentElement.classList.toggle('dark', isDark);
+   }, [isDark]);
    return (
       <label className="relative flex items-center w-14 h-7 cursor-pointer">
          <input
             type="checkbox"
             className="peer sr-only"
-            onClick={toggleDarkMode}
+            checked={isDark}
+            onChange={() => setIsDark((prev) => !prev)}
          />
 
          {/* Track */}
-         <div className="w-full h-7 rounded-full bg-gray-700 peer-checked:bg-white transition-colors"></div>
+         <div className="w-full h-6 rounded-full bg-gray-700 peer-checked:bg-white transition-colors"></div>
 
          {/* Knob */}
-         <div className="absolute left-0 w-7 h-7 bg-gray-200 rounded-full transition-transform peer-checked:translate-x-7"></div>
+         <div
+            className={`absolute left-1 top-1 w-5 h-5 rounded-full transition-transform translate-x-0 bg-gray-200 dark:translate-x-7 dark:bg-gray-700
+          `}
+         />
 
-         {/* Text */}
-         <span className="pointer-events-none absolute right-1 text-sm text-white peer-checked:hidden">
+         {/* Icons */}
+         <span className="pointer-events-none absolute right-1 text-sm">
             🌙
          </span>
-         <span className="pointer-events-none absolute left-1 text-sm text-white hidden peer-checked:block">
-            ☀️
-         </span>
+         <span className="pointer-events-none absolute left-1 text-sm">☀️</span>
       </label>
    );
 };

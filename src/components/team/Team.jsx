@@ -1,5 +1,4 @@
-import { members } from "./TeamMembers";
-
+import { members } from './TeamMembers';
 
 const Team = () => {
    return (
@@ -17,8 +16,11 @@ const Team = () => {
                </div>
 
                <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300">
-                  Welcome!! The Ivory consists of talented, problem-solvers and hardworking members. The 
-                  Team expertises in diverse languages, designs, analysis, stacks, frameworks. The Ivory does not end there, we are cost friendly, treat our customers with urgency & care, and provide a long-lasting, scalable solutions. 
+                  Welcome!! The Ivory consists of talented, problem-solvers and
+                  hardworking members. The Team expertises in diverse languages,
+                  designs, analysis, stacks, frameworks. The Ivory does not end
+                  there, we are cost friendly, treat our customers with urgency
+                  & care, and provide a long-lasting, scalable solutions.
                </p>
             </div>
          </div>
@@ -28,10 +30,13 @@ const Team = () => {
                {members.map((mem, idx) => (
                   <div
                      key={idx}
-                     className="flex flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700">
+                     className="flex flex-col items-center p-4 sm:p-6 rounded-xl dark:border-gray-700  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  hover:bg-white/10 backdrop-blur">
                      <img
                         className="object-cover w-full rounded-xl aspect-square"
-                        src={mem.ImageUrl ?? "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"}
+                        src={
+                           mem.ImageUrl ??
+                           'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
+                        }
                         alt=""
                      />
 
