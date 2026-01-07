@@ -1,7 +1,6 @@
 import AboutHero from './sections/AboutHero';
 import WhoWeAre from './sections/WhoWeAre';
 import MissionVision from './sections/MissionVision';
-import ServicesOverview from './sections/ServicesOverview';
 import WorkProcess from './sections/WorkProcess';
 import Values from './sections/Values';
 import WhyChooseUs from './sections/WhyChooseUs';
@@ -13,7 +12,6 @@ const AboutPage = () => {
          <AboutHero />
          <WhoWeAre />
          <MissionVision />
-         <ServicesOverview />
          <WorkProcess />
          <Values />
          <WhyChooseUs />

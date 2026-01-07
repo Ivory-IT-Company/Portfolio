@@ -42,12 +42,6 @@ export const serviceList = [
       imgUrl: '/images/cloud-services.jpg',
    },
    {
-      name: 'E-commerce Solutions',
-      shortDesc:
-         'Full-featured e-commerce platform development including Shopify customization, WooCommerce optimization, Magento enterprise solutions, headless commerce with payment gateway integration (Stripe, PayPal), inventory management, multi-vendor marketplace functionality, and conversion rate optimization.',
-      imgUrl: '/images/ecommerce.jpg',
-   },
-   {
       name: 'Software Testing',
       shortDesc:
          'Advanced Progressive Web App (PWA) development that combines the best of web and mobile experiences with offline functionality, push notifications, home screen installation, app-like performance, service workers, and responsive design that works flawlessly across all modern browsers and devices.',
@@ -62,7 +56,7 @@ export const serviceList = [
    {
       name: 'Performance Optimization',
       shortDesc:
-         'Website and application performance optimization focusing on Core Web Vitals (LCP, FID, CLS), image optimization, code splitting, lazy loading, CDN implementation, caching strategies, database query optimization, and critical rendering path improvements for lightning-fast user experiences.',
+         'Website and application performance optimization focusing on Core Web Vitals (LCP, FID, CLS), image optimization, code splitting, lazy loading, caching strategies, database query optimization, and critical rendering path improvements for lightning-fast user experiences.',
       imgUrl: '/images/performance.jpg',
    },
    {
@@ -70,11 +64,5 @@ export const serviceList = [
       shortDesc:
          'Comprehensive 24/7 website and application maintenance including proactive monitoring, security patches, performance optimization, bug fixes, feature updates, backup management, uptime guarantees, dedicated support channels, and emergency response protocols to ensure uninterrupted service.',
       imgUrl: '/images/support.jpg',
-   },
-   {
-      name: 'Brand Identity',
-      shortDesc:
-         'Complete brand identity design packages including logo creation, color palette development, typography systems, brand guidelines, style guides, brand messaging frameworks, visual identity systems, marketing collateral design, and brand strategy consulting for cohesive brand experiences.',
-      imgUrl: '/images/branding.jpg',
    },
 ];

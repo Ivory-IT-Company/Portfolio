@@ -38,7 +38,7 @@ const Header = () => {
    ];
 
    return (
-      <header className="px-10 select-none pt-4 pb-2.5 max-md:px-2 border-b border-gray-500">
+      <header className="px-10 select-none pt-4 pb-2.5 max-md:px-2 border-b border-gray-300 dark:border-gray-500">
          <div className="flex flex-row justify-between text-center items-center">
             <div>
                <a href="/">
@@ -62,23 +62,7 @@ const Header = () => {
                      </NavLink>
                   ))}
                </div>
-               {/* <nav className="flex gap-10">
-                  <ul className="flex flex-row items-center gap-8 font-serif font-light">
-                     {navItems.map((itm, index) => (
-                        <a
-                           key={index}
-                           onClick={() => itemClicked(index)}
-                           className={`${
-                              isActive ? 'active:bg-amber-400 ' : ''
-                           } px-2 rounded-lg hover:backdrop-blur-sm hover:bg-white/25`}
-                           href={itm.link}>
-                           <li>{itm.text}</li>
-                        </a>
-                     ))}
-                  </ul>
-
-                  <ToggleButton />
-               </nav> */}
+            
             </div>
 
             <div className="max-md:hidden">
@@ -90,7 +74,7 @@ const Header = () => {
                <ToggleButton />
                <Menu as="div" className="relative inline-block">
                   <MenuButton className="inline-flex w-full justify-start  border gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold  inset-ring-1 inset-ring-white/5 hover:bg-white/20">
-                     <List size={16} />
+                     <List size={12} />
                   </MenuButton>
 
                   <MenuItems

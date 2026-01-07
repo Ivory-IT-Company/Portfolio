@@ -3,12 +3,10 @@ import { BriefcaseBusiness, Sparkles } from 'lucide-react';
 const Home = () => {
    return (
       <>
-         <div className="flex flex-row gap-2 items-center max-lg:flex-col max-lg:h-[780px] max-xl:h-[980px] xl:h-screen justify-center px-1 xl:px-25">
-            {/* left: will contain some basic info */}
-            <div className="lg:basis-[50%]">
-               <div className="flex flex-col gap-6 max-md:px-2.5">
+         <div className="">
+               <div className="flex flex-col justify-center items-center text-center gap-6 max-md:px-2.5 max-h-screen max-xl:h-[980px] xl:h-screen ">
                   {/* md:px-28 */}
-                  <div className="flex flex-row gap-0.5  max-sm:w-fit max-sm:gap-1.5 md:gap-2.5 ">
+                  <div className="flex flex-row gap-0.5 max-md:hidden max-sm:w-fit max-sm:gap-1.5 md:gap-2.5 ">
                      <div className="bg-blue-200 rounded-2xl">
                         <span className="p-1 md:p-2.5 flex gap-0.5 md:gap-1.5 justify-center items-center text-xs md:text-sm text-blue-600 ">
                            <BriefcaseBusiness size={16} />
@@ -51,17 +49,8 @@ const Home = () => {
                   </div>
                </div>
             </div>
-            {/* right: will be the div for the image */}
-            <div className="lg:basis-[40%]">
-               <div className="px-2.5">
-                  <img
-                     className="rounded-3xl md:h-100"
-                     src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg"
-                     alt=""
-                  />
-               </div>
-            </div>
-         </div>
+      
+         
       </>
    );
 };
