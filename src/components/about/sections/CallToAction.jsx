@@ -1,10 +1,10 @@
 const CallToAction = () => {
    return (
-      <section className="px-6 md:px-28 py-16 text-center bg-gray-50">
+      <section className="px-6 md:px-28 py-16 text-center ">
          <h2 className="text-3xl font-bold mb-4">
             Ready to build something great?
          </h2>
-         <p className="text-gray-600 mb-6">
+         <p className="text-gray-600 dark:text-gray-400 mb-6">
             Let’s turn your idea into a powerful digital product.
          </p>
          <a

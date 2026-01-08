@@ -1,5 +1,4 @@
 import AboutHero from './sections/AboutHero';
-import WhoWeAre from './sections/WhoWeAre';
 import MissionVision from './sections/MissionVision';
 import WorkProcess from './sections/WorkProcess';
 import Values from './sections/Values';
@@ -9,9 +8,8 @@ import { motion } from 'motion/react';
 
 const AboutPage = () => {
    return (
-      <main className="space-y">
+      <main className="lg:px-44 2xl:px-96">
          <AboutHero />
-         <WhoWeAre />
          <MissionVision />
          <WorkProcess />
          <Values />

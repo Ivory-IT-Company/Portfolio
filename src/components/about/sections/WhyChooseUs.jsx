@@ -9,9 +9,9 @@ const reasons = [
 
 const WhyChooseUs = () => {
    return (
-      <section className="px-6 md:px-28">
+      <section className="h-[350px] flex flex-col justify-center px-6 md:px-28">
          <h2 className="text-3xl font-bold mb-6">Why Choose Ivory</h2>
-         <ul className="space-y-3 text-gray-600">
+         <ul className="space-y-3 text-gray-600 dark:text-gray-400">
             {reasons.map((reason) => (
                <li key={reason}>• {reason}</li>
             ))}
