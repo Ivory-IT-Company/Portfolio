@@ -16,8 +16,9 @@ export const FooterDown = () => {
             <div className="flex mt-4 sm:justify-center sm:mt-0">
                {' '}
                <span>Follow Us On Social Media</span>
-               {socialIcons.map((val) => (
+               {socialIcons.map((val, idx) => (
                   <a
+                     key={idx}
                      href={val.href}
                      className="text-body hover:text-heading  ms-5">
                      {val.icon}

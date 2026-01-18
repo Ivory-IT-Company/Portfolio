@@ -22,8 +22,8 @@ const OurServices = () => {
                   <div
                      key={idx}
                      className="relative flex flex-col text-center items-center min-h-full px-6 py-6 border rounded-xl ">
-                     <div className="absolute top-0 left-0 mt-1 ml-2 p-3 border rounded-xl">{idx+1}</div>
-                     <img className="w-full" src={service.imgUrl} alt="" />
+                     <div className="absolute top-0.5 left-0.5 mt-1.5 size-auto ml-2 p-2 border rounded-xl">{service.icon ??idx+1}</div>
+                     {/* <img className="w-full" src={service.imgUrl} alt="" /> */}
                      <h1 className="font-bold font-mono text-2xl mb-2.5">
                         {service.name}
                      </h1>

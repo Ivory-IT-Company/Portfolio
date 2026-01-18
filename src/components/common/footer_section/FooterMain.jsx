@@ -35,8 +35,8 @@ export const FooterMain = () => {
                   Services
                </h2>
                <ul className="text-body text-sm font-normal">
-                  {services.map((link) => (
-                     <li className="mb-2" key={link.link}>
+                  {services.map((link,idx) => (
+                     <li className="mb-2" key={idx}>
                         <a
                            className="hover:text-blue-400 hover:underline transition">
                            {link.name}

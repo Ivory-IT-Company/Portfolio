@@ -2,11 +2,11 @@ import { members } from './TeamMembers';
 
 const Team = () => {
    return (
-      <section className="bg-white dark:bg-gray-900">
-         <div className="h-[32rem] bg-gray-100 dark:bg-gray-800">
+      <section className="">
+         <div className="h-[32rem] ">
             <div className="container px-6 py-10 mx-auto">
-               <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
-                  The Executive Team
+               <h1 className="text-2xl font-semibold text-center font-serif text-gray-800 capitalize lg:text-3xl dark:text-white">
+                  The IVORY Team
                </h1>
 
                <div className="flex justify-center mx-auto mt-6">
@@ -25,12 +25,12 @@ const Team = () => {
             </div>
          </div>
 
-         <div className="container px-6 py-10 mx-auto -mt-72 sm:-mt-80 md:-mt-96">
+         <div className="container px-6 py-12 lg:py-20 mx-auto -mt-72 sm:-mt-80 md:-mt-96">
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
                {members.map((mem, idx) => (
                   <div
                      key={idx}
-                     className="flex flex-col items-center p-4 sm:p-6 rounded-xl dark:border-gray-700  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  hover:bg-white/10 backdrop-blur">
+                     className="flex flex-col items-center p-4 sm:p-6 rounded-xl  dark:border-gray-700  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-75 hover:lg:scale-110 hover:bg-gray-500/5  hover:dark:bg-white/5 backdrop-blur">
                      <img
                         className="object-cover w-full rounded-xl aspect-square"
                         src={

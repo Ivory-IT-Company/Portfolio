@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
-import { List } from 'lucide-react';
 import ToggleButton from '../Toggle/ToggleButton';
 import { NavLink } from 'react-router';
+import { BsJustify } from 'react-icons/bs';
 
 const Header = () => {
    // const [isActive, setIsActive] = useState(false);
@@ -38,7 +38,7 @@ const Header = () => {
    ];
 
    return (
-      <header className="px-10 select-none pt-4 pb-2.5 max-md:px-2 border-b border-gray-300 dark:border-gray-500">
+      <header className="block px-10 select-none pt-4 pb-2.5 max-md:px-2 border-b border-gray-300 dark:border-gray-500">
          <div className="flex flex-row justify-between text-center items-center">
             <div>
                <a href="/">
@@ -74,7 +74,7 @@ const Header = () => {
                <ToggleButton />
                <Menu as="div" className="relative inline-block">
                   <MenuButton className="inline-flex w-full justify-start  border gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold  inset-ring-1 inset-ring-white/5 hover:bg-white/20">
-                     <List size={12} />
+                     <BsJustify size={12} />
                   </MenuButton>
 
                   <MenuItems
