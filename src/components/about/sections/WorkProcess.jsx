@@ -24,7 +24,6 @@ const WorkProcess = () => {
             {steps.map((step, idx) => (
                <motion.span
                   className="max-sm:text-xl text-2xl"
-                  // transition={{}}
                   initial={{ visibility: false, opacity: 0 }}
                   whileHover={{
                      scaleX: 1.1,
@@ -37,43 +36,6 @@ const WorkProcess = () => {
                </motion.span>
             ))}
          </motion.div>
-         {/* <div>
-            <div className="relative w-full h-125">
-               <svg
-                  // key={idx}
-                  className="absolute pointer-events-none"
-                  style={{
-                     left: 0,
-                     top: 50,
-                     width: 500,
-                     height: 600,
-                  }}>
-                  {' '}
-                  <polyline
-                     points="0,0 0,370 480,370"
-                     stroke="gray"
-                     strokeWidth={2}
-                     fill="gray"
-                  />
-               </svg>
-
-               {steps.map((itm, idx) => (
-                  <motion.span
-                     key={idx}
-                     initial={{ opacity: 0, scale: 0.1 }}
-                     whileInView={{ opacity: 1, scale: 1.35 }}
-                     whileHover={{
-                        scale: 1.55,
-                        color: 'oklch(60.6% 0.25 292.717)',
-                     }}
-                     className=" text-gray-600 dark:text-gray-400 "
-                     // style={{ left: idx * 130, top: idx * 100 }}
-                  >
-                     {itm}
-                  </motion.span>
-               ))}
-            </div>
-         </div> */}
       </section>
    );
 };

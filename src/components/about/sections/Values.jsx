@@ -15,7 +15,7 @@ const Values = () => {
          <motion.h2
             whileHover={{ scaleY: 1.1, transition: { duration: 0.3 } }}
             transition={{ duration: 0.6 }}
-            // hover:p-3 hover:w-fit hover:border hover:border-dashed
+    
             className="text-4xl font-bold mb-6 ">
             Our Values
          </motion.h2>

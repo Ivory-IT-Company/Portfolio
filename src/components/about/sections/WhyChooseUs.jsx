@@ -49,7 +49,6 @@ const reasons_dict = [
 
 const WhyChooseUs = () => {
    return (
-      // h-87.5
       <section className="h-fit md:h-160 flex flex-col justify-center px-6 pt-7 md:px-16">
          <div className="text-center mb-6">
             <h2 className="text-3xl font-bold mb-1.5 ">

@@ -30,7 +30,7 @@ const Team = () => {
                {members.map((mem, idx) => (
                   <div
                      key={idx}
-                     className="flex flex-col items-center p-4 sm:p-6 rounded-xl  dark:border-gray-700  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-75 hover:lg:scale-110 hover:bg-gray-500/5  hover:dark:bg-white/5 backdrop-blur-xs">
+                     className="flex flex-col items-center p-2 sm:p-6 rounded-xl border-gray-700 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-60 hover:lg:scale-110 hover:bg-white/5 backdrop-blur-xs">
                      <img
                         className="object-cover w-full rounded-xl aspect-square"
                         src={
@@ -40,18 +40,18 @@ const Team = () => {
                         alt=""
                      />
 
-                     <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">
+                     <h1 className="mt-4 text-2xl font-semibold capitalizetext-white">
                         {mem.Name}
                      </h1>
 
-                     <p className="mt-2 text-gray-500 capitalize dark:text-gray-300">
+                     <p className="mt-2 capitalize text-gray-300">
                         {mem.Role}
                      </p>
 
                      <div className="flex mt-3 -mx-2">
                         {mem.SocialMedia.map((media, index) => (
                            <a
-                              className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                              className="mx-2 transition-colors duration-300 text-gray-300 hover:text-blue-400"
                               key={index}
                               href={media.link}
                               aria-label={media.name}>

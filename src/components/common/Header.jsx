@@ -4,15 +4,6 @@ import { NavLink } from 'react-router';
 import { BsJustify } from 'react-icons/bs';
 
 const Header = () => {
-   // const [isActive, setIsActive] = useState(false);
-   // const itemClicked = () => {
-   //       setIsActive(true);
-   // };
-
-   // useEffect(() => {
-   //    itemClicked
-   // }, [isActive])
-
    const navItems = [
       {
          text: 'Home',

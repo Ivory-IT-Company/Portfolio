@@ -19,25 +19,6 @@ const Technologies = () => {
                   business impact.
                </p>
             </div>
-            {/* this was the first version, a fallback to come back to if the second version does not satify the design requirement */}
-            {/* <div>
-               {Object.entries(TechnologyList).map(([category, items]) => (
-                  <div key={category} className="my-2 ">
-                     <h1 className="text-2xl mb-4">{category}</h1>
-                     <div className="flex flex-wrap gap-2">
-                        {items.map((item, idx) => (
-                           <div
-                              className="flex py-1.5 px-2 border rounded-2xl gap-2 items-center  bg-violet-300/5 backdrop-blur-sm "
-                              key={idx}>
-                              {' '}
-                              <span>{item.name}</span>
-                              <span>{item.logo}</span>{' '}
-                           </div>
-                        ))}
-                     </div>
-                  </div>
-               ))}
-            </div> */}
 
             <div className="px-4 lg:px-36">
                {Object.entries(TechnologyList).map(([category, items], idx) => (
