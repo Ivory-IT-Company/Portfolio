@@ -1,7 +1,5 @@
-import React from 'react';
-import { socialIcons } from './footer_section/FooterInfo';
+import { socialIcons } from './footer_section/data/data';
 import { FooterDown } from './footer_section/FooterContact';
-import { FooterMain } from './footer_section/FooterMain';
 
 const Footer = () => {
    console.log(socialIcons);
@@ -9,14 +7,14 @@ const Footer = () => {
    return (
       <>
          <footer className="bg-neutral-primary-soft">
-            <div className="mx-auto w-full p-4 py-6 lg:py-8">
-               <FooterMain />
+            <div className="mx-auto w-full px-4 my-2">
+               {/* filter out, might add later */}
+               {/* <FooterMain /> */}
                <FooterDown />
             </div>
          </footer>
       </>
    );
 };
-
 
 export default Footer;

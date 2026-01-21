@@ -1,22 +1,32 @@
-import { FaGithub, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaFacebookF, FaWhatsapp, FaTelegramPlane } from 'react-icons/fa';
 import { BsTwitterX } from 'react-icons/bs';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
 export const socialIcons = [
    {
-      icon: <FaGithub size={22} />,
+      icon: <FaGithub size={20} />,
       href: 'https://github.com/Ivory-IT-Company',
       label: 'GitHub',
    },
    {
-      icon: <FaFacebook size={22} />,
+      icon: <FaFacebookF size={20} />,
       href: 'https://facebook.com',
       label: 'Facebook',
    },
    {
-      icon: <BsTwitterX size={22} />,
-      href: 'https://twitter.com',
+      icon: <BsTwitterX size={20} />,
+      href: 'https://x.com',
       label: 'Twitter',
+   },
+   {
+      icon: <FaWhatsapp size={20} />,
+      href: 'https://WhatsApp.com',
+      label: 'WhatsApp',
+   },
+   {
+      icon: <FaTelegramPlane size={20} />,
+      href: 'https://WhatsApp.com',
+      label: 'Telegram',
    },
 ];
 
@@ -25,6 +35,7 @@ export const quickLinks = [
    { name: 'Home', link: 'home' },
    { name: 'About', link: 'about' },
    { name: 'Services', link: 'services' },
+   { name: 'Projects', link: 'projects' },
    { name: 'Team', link: 'team' },
 ];
 

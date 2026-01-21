@@ -27,7 +27,7 @@ import {
    SiVite,
    SiVitest,
 } from 'react-icons/si';
-import { TbBrandCSharp, TbSql } from 'react-icons/tb';
+import { TbBrandCSharp } from 'react-icons/tb';
 
 export const serviceList = [
    {
@@ -64,7 +64,7 @@ export const serviceList = [
    {
       name: 'Backend & API Integration',
       shortDesc:
-         'Robust backend development and seamless API integration using Node.js, Python (Django/Flask), PHP (Laravel), RESTful APIs, GraphQL, database optimization (PostgreSQL, MySQL, MongoDB), authentication systems (OAuth, JWT), and microservices architecture for scalable, secure data management.',
+         'Robust backend development and seamless API integration using Node.js, Python (FastAPI/Flask), PHP (Laravel), RESTful APIs, GraphQL, database optimization (PostgreSQL, MySQL, MongoDB), authentication systems (OAuth, JWT), and microservices architecture for scalable, secure data management.',
       icon: <AiTwotoneApi size={24} />,
    },
    // {
@@ -75,9 +75,9 @@ export const serviceList = [
    //    icon: <IoCloudDoneOutline />
    // },
    {
-      name: 'Testing and Quality Assurance',
+      name: 'App Testing and Quality Assurance',
       shortDesc:
-         'Advanced Progressive Web App (PWA) development that combines the best of web and mobile experiences with offline functionality, push notifications, home screen installation, app-like performance, service workers, and responsive design that works flawlessly across all modern browsers and devices.',
+         'Comprehensive testing strategies and quality assurance processes, including unit/integration testing, automated QA pipelines, defect prevention, regression suites, and performance validation to ensure reliable software delivery.',
       icon: <LuBugOff size={22} />,
    },
    // {
@@ -101,34 +101,34 @@ export const serviceList = [
 
 export const TechnologyList = {
    Languages: [
-      { name: 'TypeScript', logo: <SiTypescript size={14}/> },
-      { name: 'JavaScript', logo: <DiJavascript1 /> },
-      { name: 'C#', logo: <TbBrandCSharp /> },
-      { name: 'Python', logo: <AiOutlinePython /> },
-      { name: 'PHP', logo: <RiPhpFill /> },
+      { name: 'TypeScript', logo: <SiTypescript size={18} /> },
+      { name: 'JavaScript', logo: <DiJavascript1 size={18} /> },
+      { name: 'C#', logo: <TbBrandCSharp size={18} /> },
+      { name: 'Python', logo: <AiOutlinePython size={18} /> },
+      { name: 'PHP', logo: <RiPhpFill size={22} /> },
       { name: 'SQL', logo: '' },
-      { name: 'HTML5', logo: <AiOutlineHtml5 /> },
-      { name: 'CSS3', logo: <FaCss3 /> },
+      { name: 'HTML5', logo: <AiOutlineHtml5 size={18} /> },
+      { name: 'CSS3', logo: <FaCss3 size={18} /> },
    ],
    Frameworks: [
-      { name: 'Laravel', logo: <SiLaravel /> },
-      { name: '.NET Core', logo: <SiDotnet /> },
-      { name: 'FastAPI', logo: <SiFastapi /> },
-      { name: 'Flask', logo: <SiFlask /> },
-      { name: 'Vue.js', logo: <FaVuejs /> },
-      { name: 'Express.js', logo: <SiExpress /> },
+      { name: 'Laravel', logo: <SiLaravel size={18} /> },
+      { name: '.NET Core', logo: <SiDotnet size={18} /> },
+      { name: 'FastAPI', logo: <SiFastapi size={18} /> },
+      { name: 'Flask', logo: <SiFlask size={18} /> },
+      { name: 'Vue.js', logo: <FaVuejs size={18} /> },
+      { name: 'Express.js', logo: <SiExpress size={18} /> },
    ],
    Libraries: [
-      { name: 'React', logo: <SiReact /> },
-      { name: 'Framer Motion', logo: <FiFramer /> },
-      { name: 'Tailwind CSS', logo: <SiTailwindcss /> },
-      { name: 'shadcn/ui', logo: <SiShadcnui /> },
+      { name: 'React', logo: <SiReact size={18} /> },
+      { name: 'Framer Motion', logo: <FiFramer size={18} /> },
+      { name: 'Tailwind CSS', logo: <SiTailwindcss size={18} /> },
+      { name: 'shadcn/ui', logo: <SiShadcnui size={18} /> },
    ],
-   Design: [{ name: 'Figma', logo: <FiFigma /> }],
+   Design: [{ name: 'Figma', logo: <FiFigma size={18} /> }],
    Testing: [
-      { name: 'Selenium', logo: <SiSelenium /> },
-      { name: 'Jest', logo: <SiJest /> },
-      { name: 'Vitest', logo: <SiVitest /> },
+      { name: 'Selenium', logo: <SiSelenium size={18} /> },
+      { name: 'Jest', logo: <SiJest size={18} /> },
+      { name: 'Vitest', logo: <SiVitest size={18} /> },
    ],
 
    Architecture: [
@@ -142,16 +142,16 @@ export const TechnologyList = {
       { name: 'Package Diagrams', logo: '' },
    ],
    'Database And Caching': [
-      { name: 'PostgreSQL', logo: <SiPostgresql /> },
-      { name: 'MySQL', logo: <SiMysql /> },
+      { name: 'PostgreSQL', logo: <SiPostgresql size={18} /> },
+      { name: 'MySQL', logo: <SiMysql size={18} /> },
       { name: 'MSSQL', logo: '' },
-      { name: 'MongoDB', logo: <SiMongodb /> },
-      { name: 'Redis', logo: <DiRedis /> },
-      { name: 'Supabase', logo: <SiSupabase /> },
+      { name: 'MongoDB', logo: <SiMongodb size={18} /> },
+      { name: 'Redis', logo: <DiRedis size={18} /> },
+      { name: 'Supabase', logo: <SiSupabase size={18} /> },
    ],
    'Tooling And DevOps': [
-      { name: 'Docker', logo: <DiDocker /> },
-      { name: 'Git', logo: <FaGitAlt /> },
-      { name: 'Vite', logo: <SiVite /> },
+      { name: 'Docker', logo: <DiDocker size={18} /> },
+      { name: 'Git', logo: <FaGitAlt size={18} /> },
+      { name: 'Vite', logo: <SiVite size={18} /> },
    ],
 };

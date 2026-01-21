@@ -4,14 +4,16 @@
 
 @layer base {
    body {
-     @apply bg-white text-slate-900 dark:bg-black dark:text-slate-100;
-     font-family: var(--font-sans);
+     @apply bg-white text-slate-900 dark:bg-zinc-900 dark:text-slate-100;
+     font-family: var(--font-serif);
    }
  }
  
 
 @theme {
    --color-mint-500: oklch(0.72 0.11 178);
+
+   --color-zinc-900: oklch(14.1% 0.005 285.823);
 
    /* font stylings */
    --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',

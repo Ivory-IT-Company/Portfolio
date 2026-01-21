@@ -1,10 +1,10 @@
-import { socialIcons } from './FooterInfo';
+import { socialIcons } from './data/data';
 
 export const FooterDown = () => {
    const currentYear = new Date().getFullYear();
    return (
       <>
-         <hr className="my-6 sm:mx-auto lg:my-8 text-gray-300 dark:text-gray-600" />
+         <hr className=" sm:mx-auto mb-4 text-gray-300 dark:text-gray-600" />
          <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-body sm:text-center">
                © {currentYear}{' '}
@@ -15,7 +15,7 @@ export const FooterDown = () => {
             </span>
             <div className="flex mt-4 sm:justify-center sm:mt-0">
                {' '}
-               <span>Follow Us On Social Media</span>
+               <span className='text-sm'>Follow Us On</span>
                {socialIcons.map((val, idx) => (
                   <a
                      key={idx}

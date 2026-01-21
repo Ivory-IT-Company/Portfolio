@@ -3,11 +3,11 @@ import { serviceList } from './data/data';
 const OurServices = () => {
    return (
       <div className="flex flex-col">
-         <div className="flex flex-col justify-center items-center mb-16">
+         <div className="flex flex-col justify-center items-center mb-6">
             <h1 className="text-6xl mb-6">
                Our <span>Services</span>
             </h1>
-            <span className="lg:px-52 text-center text-gray-600 dark:text-gray-400">
+            <span className="text-xl lg:text-2xl mb-8  max-w-4xl text-center p-2">
                At Ivory, we provide comprehensive web design, development, and
                digital solutions focused on delivering exceptional client
                satisfaction. From stunning UI/UX to robust backend systems and
@@ -21,13 +21,14 @@ const OurServices = () => {
                {serviceList.map((service, idx) => (
                   <div
                      key={idx}
-                     className="relative flex flex-col text-center items-center min-h-full px-6 py-6 border rounded-xl ">
-                     <div className="absolute top-0.5 left-0.5 mt-1.5 size-auto ml-2 p-2 border rounded-xl">{service.icon ??idx+1}</div>
-                     {/* <img className="w-full" src={service.imgUrl} alt="" /> */}
-                     <h1 className="font-bold font-mono text-2xl mb-2.5">
+                     className="relative flex flex-col text-center items-center min-h-full px-6 py-6 border border-gray-600 rounded-xl ">
+                     <div className="absolute top-0.5 left-0.5 mt-1.5 size-auto ml-2 p-2 border rounded-xl">
+                        {service.icon ?? idx + 1}
+                     </div>
+                     <h1 className="font-bold font-mono text-xl sm:text-2xl mb-2.5">
                         {service.name}
                      </h1>
-                     <span className="text-gray-400 text-sm/6 text-center">
+                     <span className=" text-md/7 font-mono ">
                         {service.shortDesc}
                      </span>
                   </div>

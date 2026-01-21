@@ -1,5 +1,5 @@
 import { IoSunnyOutline } from 'react-icons/io5';
-import { toggleDarkMode } from './toggle';
+// import { toggleDarkMode } from './toggle';
 import { useState, useEffect } from 'react';
 
 const ToggleButton = () => {

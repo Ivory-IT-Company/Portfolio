@@ -1,4 +1,4 @@
-import { quickLinks, services, contacts, socialIcons } from "./FooterInfo";
+import { quickLinks, services, contacts, socialIcons } from './data/data';
 
 export const FooterMain = () => {
    return (
@@ -8,7 +8,7 @@ export const FooterMain = () => {
                <h4 className="text-2xl font-bold text-blue-500 font-serif">
                   Ivory
                </h4>
-               <p className="italic bg-gradient-to-r from-indigo-500 to-teal-400 bg-clip-text text-transparent font-medium ">
+               <p className="italic bg-linear-to-r from-indigo-500 to-teal-400 bg-clip-text text-transparent font-medium ">
                   Building modern digital products for growing businesses
                </p>
             </a>
@@ -35,10 +35,9 @@ export const FooterMain = () => {
                   Services
                </h2>
                <ul className="text-body text-sm font-normal">
-                  {services.map((link,idx) => (
+                  {services.map((link, idx) => (
                      <li className="mb-2" key={idx}>
-                        <a
-                           className="hover:text-blue-400 hover:underline transition">
+                        <a className="hover:text-blue-400 hover:underline transition">
                            {link.name}
                         </a>
                      </li>

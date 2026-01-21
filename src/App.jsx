@@ -3,9 +3,10 @@ import Footer from './components/common/Footer';
 import Header from './components/common/Header';
 import Home from './components/landing/Home';
 import Page404 from './components/error/Page404';
-import AboutPage from './components/about/AboutCompany';
+import AboutPage from './components/about/About';
 import Team from './components/team/Team';
 import Services from './components/services/Services';
+import Contact from './components/contact/Contact';
 
 function App() {
    return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="*" element={<Page404 />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="team" element={<Team />} />
+            <Route path='contact' element={<Contact />}/>
          </Routes>
 
          <Footer />

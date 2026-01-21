@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import ToggleButton from '../Toggle/ToggleButton';
 import { NavLink } from 'react-router';
@@ -38,13 +37,11 @@ const Header = () => {
    ];
 
    return (
-      <header className="block px-10 select-none pt-4 pb-2.5 max-md:px-2 border-b border-gray-300 dark:border-gray-500">
+      <header className="sticky top-0 block px-10 select-none pt-4 pb-2.5 max-md:px-2 bg-zinc-900/5 backdrop-blur-sm">
          <div className="flex flex-row justify-between text-center items-center">
-            <div>
-               <a href="/">
-                  <h4 className="font-semibold font-mono text-lg">IVORY</h4>
-               </a>
-            </div>
+            <a href="/">
+               <h4 className="font-semibold font-mono text-lg">IVORY</h4>
+            </a>
 
             {/* large screen nav */}
             <div className="max-md:hidden">
@@ -54,32 +51,32 @@ const Header = () => {
                         to={itm.link}
                         className={({ isActive }) =>
                            isActive
-                              ? ' bg-gray-600/55  px-3 rounded-lg hover:backdrop-blur-sm hover:bg-gray-600/55'
-                              : 'px-2 rounded-lg hover:backdrop-blur-sm hover:bg-gray-600/55'
+                              ? 'bg-gray-100 dark:bg-gray-600/55  px-6 rounded-lg hover:backdrop-blur-xl hover:bg-gray-100/55'
+                              : 'px-2 rounded-lg hover:backdrop-blur-xl hover:bg-gray-100/55 dark:hover:bg-gray-600/55'
                         }
                         key={index}>
                         {itm.text}
                      </NavLink>
                   ))}
                </div>
-            
             </div>
 
-            <div className="max-md:hidden">
+            {/* make toogle visible if a design comes up */}
+            <div className="hidden">
                <ToggleButton />
             </div>
 
             {/* small screen nav */}
-            <div className="flex items-center gap-2 md:hidden">
-               <ToggleButton />
-               <Menu as="div" className="relative inline-block">
-                  <MenuButton className="inline-flex w-full justify-start  border gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold  inset-ring-1 inset-ring-white/5 hover:bg-white/20">
-                     <BsJustify size={12} />
+            <div className=" md:hidden">
+               {/* <ToggleButton /> */}
+               <Menu as="div" className="">
+                  <MenuButton className="inline-flex w-full py-2 ">
+                     <BsJustify size={25} />
                   </MenuButton>
 
                   <MenuItems
                      transition
-                     className=" absolute right-0 z-10 mt-2 w-24 origin-top-right text-start bg-white dark:bg-gray-700 rounded-md outline-1 -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                     className=" absolute right-2 w-26 bg-zinc-800/10 origin-top-right text-start rounded-md outline-1 -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                      <div className="py-1">
                         {navItems.map((itm) => (
                            <MenuItem href={itm.link}>
