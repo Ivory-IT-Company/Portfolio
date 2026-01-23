@@ -70,11 +70,12 @@ const Header = () => {
                      className=" absolute right-2 w-26 bg-zinc-800/10 origin-top-right text-start rounded-md outline-1 -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                      <div className="py-1">
                         {navItems.map((itm, idx) => (
-                           <MenuItem key={idx} href={`/${itm.link}`}>
-                              <span
+                           <MenuItem key={idx}>
+                              <a
+                                 href={`/${itm.link}`}
                                  className="block px-4 py-2 text-sm  data-focus:bg-white/5 data-focus:text-white data-focus:outline-hidden">
                                  {itm.text}
-                              </span>
+                              </a>
                            </MenuItem>
                         ))}
                      </div>
