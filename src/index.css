@@ -5,7 +5,7 @@
 @layer base {
    /* bg-white text-slate-900 dark:bg-zinc-900 dark:text-slate-100; */
    body {
-     @apply bg-zinc-900 text-slate-100;
+     @apply bg-radial-[at_-10%_0%] from-slate-500 to-zinc-900 to-100% text-slate-50;
      font-family: var(--font-serif);
    }
  }

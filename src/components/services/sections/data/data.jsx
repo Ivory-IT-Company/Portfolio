@@ -75,7 +75,7 @@ export const serviceList = [
    //    icon: <IoCloudDoneOutline />
    // },
    {
-      name: 'App Testing and Quality Assurance',
+      name: 'Testing and Quality Assurance',
       shortDesc:
          'Comprehensive testing strategies and quality assurance processes, including unit/integration testing, automated QA pipelines, defect prevention, regression suites, and performance validation to ensure reliable software delivery.',
       icon: <LuBugOff size={22} />,

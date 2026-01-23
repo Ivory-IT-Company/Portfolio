@@ -1,4 +1,9 @@
-import { FaGithub, FaFacebookF, FaWhatsapp, FaTelegramPlane } from 'react-icons/fa';
+import {
+   FaGithub,
+   FaFacebookF,
+   FaWhatsapp,
+   FaTelegramPlane,
+} from 'react-icons/fa';
 import { BsTwitterX } from 'react-icons/bs';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
@@ -18,18 +23,7 @@ export const socialIcons = [
       href: 'https://x.com',
       label: 'Twitter',
    },
-   {
-      icon: <FaWhatsapp size={20} />,
-      href: 'https://WhatsApp.com',
-      label: 'WhatsApp',
-   },
-   {
-      icon: <FaTelegramPlane size={20} />,
-      href: 'https://WhatsApp.com',
-      label: 'Telegram',
-   },
 ];
-
 
 export const quickLinks = [
    { name: 'Home', link: 'home' },
@@ -61,7 +55,6 @@ export const contacts = [
       text: 'Kwara State, Nigeria',
    },
 ];
-
 
 export const AboutUS = [
    {

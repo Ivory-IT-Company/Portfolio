@@ -7,10 +7,10 @@ const Services = () => {
          <div className="">
             <div className="flex items-center justify-center text-center h-150 md:min-h-screen  ">
                <div className="flex flex-col">
-                  <h1 className="text-5xl lg:text-8xl text-cyan-700 mb-1.5">
+                  <h1 className="text-5xl lg:text-8xl text-cyan-400 mb-1.5">
                      Our Diversified Digital Solutions
                   </h1>
-                  <p className="text-xl lg:text-2xl mb-8 leading-relaxed max-w-4xl mx-auto p-2">
+                  <p className="text-xl lg:text-3xl mb-8 leading-relaxed max-w-4xl mx-auto p-2">
                      Custom software that scales your business. From full-stack
                      web apps to enterprise systems, we build reliable
                      solutions.

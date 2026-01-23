@@ -71,11 +71,10 @@ const Header = () => {
                      <div className="py-1">
                         {navItems.map((itm, idx) => (
                            <MenuItem key={idx} href={`/${itm.link}`}>
-                              <a
-                                 className="block px-4 py-2 text-sm  data-focus:bg-white/5 data-focus:text-white data-focus:outline-hidden"
-                                 href={`/${itm.link}`}>
+                              <span
+                                 className="block px-4 py-2 text-sm  data-focus:bg-white/5 data-focus:text-white data-focus:outline-hidden">
                                  {itm.text}
-                              </a>
+                              </span>
                            </MenuItem>
                         ))}
                      </div>

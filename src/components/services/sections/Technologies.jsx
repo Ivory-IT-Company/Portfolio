@@ -8,10 +8,10 @@ const Technologies = () => {
       <>
          <div className="pb-5 pt-14">
             <div className="text-center">
-               <h3 className="text-2xl sm:text-4xl mb-4 font-bold">
+               <h3 className="text-2xl sm:text-5xl mb-4 font-bold">
                   Tech Stacks We Use at Ivory
                </h3>
-               <p className="mb-6 font-mono max-sm:px-4 max-w-3xl mx-auto leading-relaxed">
+               <p className="mb-6 text-xl font-mono max-sm:px-4 max-w-3xl mx-auto leading-relaxed">
                   The Ivory team brings a modern, battle-tested skillset to
                   design, build, and scale high-performance applications. We
                   blend cutting-edge frameworks, robust backend systems, and

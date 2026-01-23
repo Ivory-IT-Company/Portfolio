@@ -1,4 +1,5 @@
 import { BriefcaseBusiness, Sparkles } from 'lucide-react';
+import { motion } from 'motion/react';
 import { NavLink } from 'react-router';
 
 const Home = () => {
@@ -20,10 +21,10 @@ const Home = () => {
                      </span>
                   </div>
                </div>
-               <h1 className="max-md:text-center sm:max-w-xl text-4xl -tracking-tight lg:text-7xl text-gray-300 pb-4">
+               <h1 className="max-md:text-center sm:max-w-xl text-4xl -tracking-tight lg:text-7xl text-gray-200 pb-4">
                   Building Digital Products for the Future.
                </h1>
-               <p className="text-xl max-md:text-center text-gray-400 mb-6">
+               <p className="text-xl max-md:text-center text-gray-100 mb-6">
                   We help business grow by creating innovative software
                   solutions.
                </p>
@@ -43,9 +44,9 @@ const Home = () => {
                </div>
             </div>
          </div>
-         <div className="max-sm:hidden ">
+         <motion.div className="max-sm:hidden ">
             <span className="text-xl"></span>
-         </div>
+         </motion.div>
       </div>
    );
 };

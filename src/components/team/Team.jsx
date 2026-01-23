@@ -15,7 +15,7 @@ const Team = () => {
                   <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
                </div>
 
-               <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300">
+               <p className="max-w-2xl mx-auto mt-6 text-lg text-center text-gray-200">
                   Welcome!! The Ivory consists of talented, problem-solvers and
                   hardworking members. The Team expertises in diverse languages,
                   designs, analysis, stacks, frameworks. The Ivory does not end
@@ -25,26 +25,27 @@ const Team = () => {
             </div>
          </div>
 
-         <div className="container px-6 py-12 lg:py-20 mx-auto -mt-72 sm:-mt-80 md:-mt-96">
+         <div className="container max-sm: sm:max-w-6xl px-6 py-12 lg:py-20 mx-auto -mt-50 sm:-mt-80 md:-mt-96">
             <div className="grid grid-cols-1 gap-8 mt-8 sm:mt-16 md:grid-cols-2 xl:grid-cols-3">
                {members.map((mem, idx) => (
                   <div
                      key={idx}
-                     className="flex flex-col items-center p-2 sm:p-6 rounded-xl border-gray-700 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-60 hover:lg:scale-110 hover:bg-white/5 backdrop-blur-xs">
+                     className="flex flex-col items-center text-center p-2 sm:p-3 rounded-xl border-gray-700 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100  bg-white/3 hover:bg-white/3 backdrop-blur-none">
                      <img
+                        loading="lazy"
                         className="object-cover w-full rounded-xl aspect-square"
                         src={
                            mem.ImageUrl ??
                            'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
                         }
-                        alt=""
+                        alt="team-image"
                      />
 
-                     <h1 className="mt-4 text-2xl font-semibold capitalizetext-white">
+                     <h1 className="mt-4 text-xl font-semibold capitalizetext-white">
                         {mem.Name}
                      </h1>
 
-                     <p className="mt-2 capitalize text-gray-300">
+                     <p className="mt-2 capitalize text-lg text-gray-300">
                         {mem.Role}
                      </p>
 
