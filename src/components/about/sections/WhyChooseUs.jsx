@@ -51,11 +51,11 @@ const WhyChooseUs = () => {
    return (
       <section className="h-fit md:h-160 flex flex-col justify-center px-6 pt-7 md:px-16">
          <div className="text-center mb-6">
-            <h2 className="text-3xl font-bold mb-1.5 ">
-               Why Choose <span className="text-blue-700">Ivory?</span>
+            <h2 className="text-3xl xl:text-5xl font-bold mb-2.5 text-[#5FA9F8]">
+               Why Choose <span className="font-extrabold">Ivory?</span>
             </h2>
-            <p className="text-xs sm:text-md uppercase">
-               Definitely, <span>because we offer you the best</span>
+            <p className="text-sm sm:text-lg uppercase">
+               Definitely, <span className=''>because we offers you the best</span>
             </p>
          </div>
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">

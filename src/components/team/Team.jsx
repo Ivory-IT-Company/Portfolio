@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 import { members } from './TeamMembers';
 
 const Team = () => {
@@ -28,9 +29,9 @@ const Team = () => {
          <div className="container max-sm: sm:max-w-6xl px-6 py-12 lg:py-20 mx-auto -mt-50 sm:-mt-80 md:-mt-96">
             <div className="grid grid-cols-1 gap-8 mt-8 sm:mt-16 md:grid-cols-2 xl:grid-cols-3">
                {members.map((mem, idx) => (
-                  <div
+                  <motion.div
                      key={idx}
-                     className="flex flex-col items-center text-center p-2 sm:p-3 rounded-xl border-gray-700 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100  bg-white/3 hover:bg-white/3 backdrop-blur-none">
+                     className="flex flex-col items-center text-center p-3 sm:p-3 rounded-xl border-gray-700 transition delay-250 duration-400 ease-in-out hover:-translate-y-2 hover:scale-105 bg-[#0F1624] hover:bg-[#0F1624]/50 backdrop-blur-none">
                      <img
                         loading="lazy"
                         className="object-cover w-full rounded-xl aspect-square"
@@ -60,7 +61,7 @@ const Team = () => {
                            </a>
                         ))}
                      </div>
-                  </div>
+                  </motion.div>
                ))}
             </div>
          </div>

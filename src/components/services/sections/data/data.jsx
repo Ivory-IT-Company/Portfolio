@@ -34,38 +34,38 @@ export const serviceList = [
       name: 'Website Design',
       shortDesc:
          'We create stunning, modern, and fully responsive user interface designs that perfectly capture your brand identity and deliver exceptional user experiences across all devices including desktop, tablet, and mobile. Our design process includes wireframing, prototyping, and user testing to ensure pixel-perfect results.',
-      icon: <MdOutlineDesignServices size={24} />,
+      icon: <MdOutlineDesignServices className="sm:size-8.5" />,
    },
    {
       name: 'Website Development',
       shortDesc:
          'Comprehensive full-stack web development using cutting-edge technologies like React, Next.js, Vue.js, TypeScript, and modern JavaScript frameworks to build fast, scalable, and maintainable web applications that handle high traffic and complex functionality with optimal performance.',
-      icon: <DiCode size={24} />,
+      icon: <DiCode className="sm:size-8.5" />,
    },
    {
       name: 'Mobile Development',
       shortDesc:
          'Professional native and cross-platform mobile app development for both iOS (Swift) and Android (Kotlin/Java) platforms using React Native, Flutter, and other frameworks to deliver smooth, native-like experiences with full access to device hardware and platform-specific features.',
 
-      icon: <DiAndroid size={24} />,
+      icon: <DiAndroid className="sm:size-8.5" />,
    },
    {
       name: 'Technical Analysis',
       shortDesc:
          'In-depth technical analysis including comprehensive performance audits, detailed code reviews, security assessments, scalability evaluations, and technical feasibility studies to identify bottlenecks, vulnerabilities, and optimization opportunities in your existing systems and proposed solutions.',
-      icon: <IoIosAnalytics size={24} />,
+      icon: <IoIosAnalytics className="sm:size-8.5" />,
    },
    {
       name: 'Technical Documentation',
       shortDesc:
          'Complete technical documentation solutions including detailed API documentation (Swagger/OpenAPI), comprehensive user manuals, developer guides, architecture diagrams, deployment instructions, and maintenance documentation to ensure smooth onboarding and long-term project sustainability.',
-      icon: <MdEditDocument size={24} />,
+      icon: <MdEditDocument className="sm:size-8.5" />,
    },
    {
       name: 'Backend & API Integration',
       shortDesc:
          'Robust backend development and seamless API integration using Node.js, Python (FastAPI/Flask), PHP (Laravel), RESTful APIs, GraphQL, database optimization (PostgreSQL, MySQL, MongoDB), authentication systems (OAuth, JWT), and microservices architecture for scalable, secure data management.',
-      icon: <AiTwotoneApi size={24} />,
+      icon: <AiTwotoneApi className="sm:size-8.5" />,
    },
    // {
    //    name: 'Cloud Services',
@@ -75,10 +75,10 @@ export const serviceList = [
    //    icon: <IoCloudDoneOutline />
    // },
    {
-      name: 'Testing and Quality Assurance',
+      name: 'Testing & Quality Assurance',
       shortDesc:
          'Comprehensive testing strategies and quality assurance processes, including unit/integration testing, automated QA pipelines, defect prevention, regression suites, and performance validation to ensure reliable software delivery.',
-      icon: <LuBugOff size={22} />,
+      icon: <LuBugOff className="sm:size-8.5" />,
    },
    // {
    //    name: 'DevOps & CI/CD',
@@ -89,13 +89,13 @@ export const serviceList = [
       name: 'Performance Optimization',
       shortDesc:
          'Website and application performance optimization focusing on Core Web Vitals (LCP, FID, CLS), image optimization, code splitting, lazy loading, caching strategies, database query optimization, and critical rendering path improvements for lightning-fast user experiences.',
-      icon: <BiRocket size={24} />,
+      icon: <BiRocket className="sm:size-8.5" />,
    },
    {
       name: 'Maintenance & Support',
       shortDesc:
          'Comprehensive 24/7 website and application maintenance including proactive monitoring, security patches, performance optimization, bug fixes, feature updates, backup management, uptime guarantees, dedicated support channels, and emergency response protocols to ensure uninterrupted service.',
-      icon: <GiAutoRepair size={24} />,
+      icon: <GiAutoRepair className="sm:size-8.5" />,
    },
 ];
 

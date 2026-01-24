@@ -6,9 +6,9 @@ const Technologies = () => {
    const [open, setOpen] = useState();
    return (
       <>
-         <div className="pb-5 pt-14">
+         <div className="py-14 lg:pt-54">
             <div className="text-center">
-               <h3 className="text-2xl sm:text-5xl mb-4 font-bold">
+               <h3 className="text-2xl sm:text-5xl mb-4 font-bold text-[#5FA9F8]">
                   Tech Stacks We Use at Ivory
                </h3>
                <p className="mb-6 text-xl font-mono max-sm:px-4 max-w-3xl mx-auto leading-relaxed">
@@ -20,13 +20,17 @@ const Technologies = () => {
                </p>
             </div>
 
-            <div className="px-4 lg:px-36">
+            <div className="lg:px-8">
                {Object.entries(TechnologyList).map(([category, items], idx) => (
-                  <div key={category} className="mb-4 border border-gray-500 rounded-xl ">
+                  <div
+                     key={category}
+                     className="mb-4 border border-[#4d4d4d] bg-[#111B2E] rounded-xl ">
                      <button
                         key={category}
                         className={`flex ${
-                           open === idx ? 'border-b border-b-gray-600' : 'hidden:border-b'
+                           open === idx
+                              ? 'border-b border-b-[#4d4d4d]'
+                              : 'hidden:border-b'
                         } justify-between items-center text-lg lg:text-2xl w-full h-12 lg:h-24 px-3 rounded-xl`}
                         onClick={() => setOpen(open === idx ? null : idx)}
                         aria-expanded={open === idx}
@@ -42,10 +46,12 @@ const Technologies = () => {
                            {items.map((item, idx) => (
                               <div
                                  id={`disclosure-content-${idx}`}
-                                 className="inline-flex gap-4 py-1 px-2 border rounded-lg items-center bg-violet-300/5 backdrop-blur-sm "
+                                 className="inline-flex gap-4 py-1 px-2 rounded-lg items-center bg-[#303b55] backdrop-blur-sm "
                                  key={idx}>
                                  {' '}
-                                 <span className='text-lg font-mono'>{item.name}</span>
+                                 <span className="text-lg text-[#c6cad1] font-mono">
+                                    {item.name}
+                                 </span>
                                  <span>{item.logo}</span>{' '}
                               </div>
                            ))}

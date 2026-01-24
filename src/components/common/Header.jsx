@@ -28,7 +28,7 @@ const Header = () => {
    ];
 
    return (
-      <header className="sticky top-0 block px-10 select-none pt-4 pb-2.5 max-md:px-2 bg-zinc-900/5 backdrop-blur-sm">
+      <header className="sticky top-0 block px-10 select-none pt-4 pb-2.5 max-md:px-2 bg-[#141414]/5 backdrop-blur-sm">
          <div className="flex flex-row justify-between text-center items-center">
             <a href="/">
                <h4 className="font-semibold font-mono text-lg">IVORY</h4>
@@ -42,8 +42,8 @@ const Header = () => {
                         to={`/${itm.link}`}
                         className={({ isActive }) =>
                            isActive
-                              ? 'bg-gray-600/55  px-6 rounded-lg hover:backdrop-blur-xl hover:bg-gray-100/55'
-                              : 'px-2 rounded-lg hover:backdrop-blur-xl hover:bg-gray-600/55'
+                              ? 'bg-gray-600/55  px-6 rounded-sm hover:backdrop-blur-xl hover:bg-gray-500/55'
+                              : 'px-2 rounded-sm hover:backdrop-blur-xl hover:bg-gray-600/55'
                         }
                         key={index}>
                         {itm.text}
@@ -67,7 +67,7 @@ const Header = () => {
 
                   <MenuItems
                      transition
-                     className=" absolute right-2 w-26 bg-zinc-800/10 origin-top-right text-start rounded-md outline-1 -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                     className=" absolute right-2 w-26 bg-[#0F1623] origin-top-right text-start rounded-md outline-1 -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                      <div className="py-1">
                         {navItems.map((itm, idx) => (
                            <MenuItem key={idx}>

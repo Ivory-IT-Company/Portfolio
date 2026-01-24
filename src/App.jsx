@@ -7,22 +7,30 @@ import AboutPage from './components/about/About';
 import Team from './components/team/Team';
 import Services from './components/services/Services';
 import Contact from './components/contact/Contact';
+import { useState } from 'react';
 
 function App() {
+   const [isLoading, setIsLoading] = useState();
    return (
       <>
-         <Header />
-         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="home" element={<Home />} />
-            <Route path="services" element={<Services />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="team" element={<Team />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<Page404 />} />
-         </Routes>
+         {isLoading ? (
+            <></>
+         ) : (
+            <>
+               <Header />
+               <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="home" element={<Home />} />
+                  <Route path="services" element={<Services />} />
+                  <Route path="about" element={<AboutPage />} />
+                  <Route path="team" element={<Team />} />
+                  <Route path="contact" element={<Contact />} />
+                  <Route path="*" element={<Page404 />} />
+               </Routes>
 
-         <Footer />
+               <Footer />
+            </>
+         )}
       </>
    );
 }
