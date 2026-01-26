@@ -8,11 +8,13 @@ const AboutHero = () => {
          </h1>
          <motion.p
             initial={{
-               opacity: 0.1, y:40
+               opacity: 0.1,
+               y: 40,
             }}
-            whileInView={{ opacity: 0.9, y:10 }}
-            transition={{duration:1, ease:'easeOut', delay:0.1}}
-            className="max-w-5xl font-mono mx-auto text-xl sm:text-2xl tracking-wider font-light">
+            whileInView={{ opacity: 0.9, y: 10 }}
+            transition={{ duration: 1, ease: 'easeOut', delay: 0.1 }}
+            // text-[#E5E7EB]
+            className="max-w-7xl font-mono mx-auto text-xl sm:text-3xl  text-gray-300 tracking-wider font-light">
             Ivory is a Nigeria-based software development company focused on
             building high-quality web and mobile solutions for startups and
             growing businesses. We combine strong engineering principles with

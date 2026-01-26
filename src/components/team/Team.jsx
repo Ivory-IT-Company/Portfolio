@@ -6,7 +6,7 @@ const Team = () => {
       <section className="">
          <div className="h-128">
             <div className="container px-6 py-10 mx-auto">
-               <h1 className="text-2xl font-semibold text-center font-serif  capitalize lg:text-3xl text-white">
+               <h1 className="text-2xl font-semibold text-center font-serif  capitalize lg:text-3xl text-[#5FA9F8]">
                   The IVORY Team
                </h1>
 
@@ -16,7 +16,7 @@ const Team = () => {
                   <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
                </div>
 
-               <p className="max-w-2xl mx-auto mt-6 text-lg text-center text-gray-200">
+               <p className="max-w-2xl mx-auto mt-6 text-lg text-center text-gray-300">
                   Welcome!! The Ivory consists of talented, problem-solvers and
                   hardworking members. The Team expertises in diverse languages,
                   designs, analysis, stacks, frameworks. The Ivory does not end
@@ -26,10 +26,20 @@ const Team = () => {
             </div>
          </div>
 
-         <div className="container max-sm: sm:max-w-6xl px-6 py-12 lg:py-20 mx-auto -mt-50 sm:-mt-80 md:-mt-96">
-            <div className="grid grid-cols-1 gap-8 mt-8 sm:mt-16 md:grid-cols-2 xl:grid-cols-3">
+         <div className="container max-sm: sm:max-w-6xl px-6 py-12 lg:py-20 mx-auto -mt-50 sm:-mt-80 md:-mt-94">
+            <motion.div className="grid grid-cols-1 gap-8 mt-8 sm:mt-16 md:grid-cols-2 xl:grid-cols-3">
                {members.map((mem, idx) => (
                   <motion.div
+                     initial={{ opacity: 0, x: -100 }}
+                     whileInView={{
+                        x: 0,
+                        opacity: 0.95,
+                        transition: { ease: 'easeIn', duration: 0.1 * idx },
+                        boxShadow: '0 0 4px rgba(99, 102, 241, 0.6)',
+                     }}
+                     whileHover={{
+                        boxShadow: '0 0 25px rgba(99, 102, 241, 0.6)'
+                     }}
                      key={idx}
                      className="flex flex-col items-center text-center p-3 sm:p-3 rounded-xl border-gray-700 transition delay-250 duration-400 ease-in-out hover:-translate-y-2 hover:scale-105 bg-[#0F1624] hover:bg-[#0F1624]/50 backdrop-blur-none">
                      <img
@@ -63,7 +73,7 @@ const Team = () => {
                      </div>
                   </motion.div>
                ))}
-            </div>
+            </motion.div>
          </div>
       </section>
    );

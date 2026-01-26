@@ -13,7 +13,7 @@ const ContactForm = () => {
                <label className="block mb-2 text-sm">Your Name</label>
                <input
                   type="text"
-                  className="w-full bg-transparent placeholder:text-slate-300 text-slate-200 text-sm border rounded-md px-3 py-4 transition duration-300 ease focus:outline-none focus:border-slate-300 hover:border-slate-300 shadow-sm focus:shadow"
+                  className="w-full bg-transparent placeholder:text-slate-300 text-slate-200 text-sm border border-[#666666] rounded-md p-3 transition duration-300 ease shadow-sm focus:shadow"
                   placeholder="John Doe"
                />
             </div>
@@ -21,7 +21,7 @@ const ContactForm = () => {
                <label className="block mb-2 text-sm">Email</label>
                <input
                   type="email"
-                  className="w-full bg-transparent placeholder:text-slate-300 text-slate-200 text-sm border border-slate-200 rounded-md px-3 py-4 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                  className="w-full bg-transparent placeholder:text-slate-300 text-slate-200 text-sm border border-[#666666] rounded-md p-3 transition duration-300 ease shadow-sm focus:shadow"
                   placeholder="yourmail@mail.com"
                />
             </div>
@@ -29,7 +29,7 @@ const ContactForm = () => {
                <label className="block mb-2 text-sm">Subject</label>
                <input
                   type="email"
-                  className="w-full bg-transparent placeholder:text-slate-300 text-slate-200 text-sm border rounded-md px-3 py-4 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                  className="w-full bg-transparent placeholder:text-slate-300 text-slate-200 text-sm border border-[#666666] rounded-md p-3 transition duration-300 ease shadow-sm focus:shadow"
                   placeholder="I have a project for Ivory"
                />
             </div>
@@ -38,7 +38,7 @@ const ContactForm = () => {
                <textarea
                   rows={6}
                   type="message"
-                  className="w-full  bg-transparent placeholder:text-slate-300 text-slate-200 text-sm border border-slate-200 rounded-md px-3 py-4 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                  className="w-full bg-transparent placeholder:text-slate-300 text-slate-200 text-sm border border-[#666666] rounded-md p-3 transition duration-300 ease shadow-sm focus:shadow"
                   placeholder="Your message our pleasure!!!"></textarea>
             </div>
          </div>

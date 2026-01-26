@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 const CallToAction = () => {
    return (
-      <section className="px-6 md:px-28 py-16 text-center ">
+      <section className="px-6 md:px-28 py-16 text-center lg:h-80">
          <h2 className="text-3xl font-bold mb-4">
             Ready to build something great?
          </h2>

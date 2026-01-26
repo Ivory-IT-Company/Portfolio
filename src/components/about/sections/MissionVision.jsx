@@ -15,16 +15,18 @@ const MissionVision = () => {
                scaleY: 1.1,
                boxShadow: '0 0 30px rgba(99, 102, 241, 0.6)',
             }}
-            className="sm:p-10  sm:border rounded-xl h-fit">
-            <h3 className="text-2xl font-bold mb-2">Our Mission</h3>
-            <p className="text-lg text-gray-300">
+            className="sm:p-10  sm:border border-gray-500 rounded-xl h-fit">
+            <h3 className="text-2xl font-bold mb-2 text-[#38BDF8]">
+               Our Mission
+            </h3>
+            <p className="text-lg text-[#d8dde4]">
                To empower businesses with scalable, secure, and user-friendly
                software solutions that solve real-world problems.
             </p>
          </motion.div>
 
          <motion.div
-            className="sm:p-10  sm:border rounded-xl h-fit"
+            className="sm:p-10 sm:border border-gray-500 rounded-xl h-fit"
             initial={{ x: -40, y: 40, opacity: 0.1 }}
             whileInView={{
                opacity: 1,
@@ -36,8 +38,10 @@ const MissionVision = () => {
                scaleY: 1.1,
                boxShadow: '0 0 30px rgba(99, 102, 241, 0.6)',
             }}>
-            <h3 className="text-2xl font-bold mb-2">Our Vision</h3>
-            <p className="text-lg text-gray-300">
+            <h3 className="text-2xl font-bold mb-2 text-[#38BDF8]">
+               Our Vision
+            </h3>
+            <p className="text-lg text-[#d8dde4]">
                To become a leading African technology company delivering
                world-class digital products globally.
             </p>

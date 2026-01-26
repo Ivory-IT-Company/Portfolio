@@ -28,7 +28,7 @@ const Header = () => {
    ];
 
    return (
-      <header className="sticky top-0 block px-10 select-none pt-4 pb-2.5 max-md:px-2 bg-[#141414]/5 backdrop-blur-sm">
+      <header className="sticky top-0 block px-10 select-none pt-4 pb-2.5 max-md:px-2 bg-[#141414]/5 backdrop-blur-sm z-1000">
          <div className="flex flex-row justify-between text-center items-center">
             <a href="/">
                <h4 className="font-semibold font-mono text-lg">IVORY</h4>

@@ -15,7 +15,7 @@ const WorkProcess = () => {
             <h2 className="text-4xl xl:text-5xl font-serif mb-4 text-[#5FA9F8]">
                Our Work Cycle
             </h2>
-            <p className="text-lg xl:text-xl leading-relaxed ">
+            <p className="text-lg xl:text-xl text-[#d8dde4] leading-relaxed ">
                At Ivory, we follow a strict work cycle for every project,
                demonstrating our dedication through each required phase. Every
                project is unique to us, and we tailor each phase to meet its
@@ -25,27 +25,27 @@ const WorkProcess = () => {
          <motion.div className="flex flex-col gap-5 h-fit ">
             {steps.map((step, idx) => (
                <motion.span
-                  className="max-sm:text-xl text-2xl hover:underline"
-                  initial={{ opacity: 0 / 1, x: 30 * idx }}
+                  className="max-sm:text-xl text-2xl text-gray-300 hover:underline decoration-blue-400 transition-all"
+                  initial={{
+                     opacity: 0.1,
+                     x: 30 * idx,
+                  }}
                   whileInView={{
                      opacity: 0.95,
                      x: 0,
-                     transition: { ease: 'easeOut', duration: 0.5 * idx },
+                     transition: { ease: 'easeOut', duration: 0.15 * idx },
                   }}
                   whileHover={{
-                     scaleX: 1.1,
+                     opacity: 0.6,
+                     scaleX: 1.25,
                      transition: {
                         type: 'spring',
-                        duration: 0.3,
-                        stiffness: 100,
-                        damping: 40,
+                        stiffness: 25,
+                        damping: 12,
                      },
                   }}
                   transition={{
-                     duration: 0.8,
-                     delay: 0.1,
-                     stiffness: 200,
-                     damping: 80,
+                     duration: 0.5,
                   }}
                   key={idx}>
                   {step}

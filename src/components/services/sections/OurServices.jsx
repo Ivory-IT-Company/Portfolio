@@ -12,7 +12,7 @@ const OurServices = () => {
             <h1 className="text-6xl mb-6 text-[#5FA9F8]">
                Our <span>Services</span>
             </h1>
-            <span className="text-xl lg:text-2xl text-slate-200 mb-8  max-w-4xl text-center p-2">
+            <span className="text-xl lg:text-2xl text-gray-300 mb-8 font-mono max-w-4xl text-center p-2">
                At Ivory, we provide comprehensive web design, development, and
                digital solutions focused on delivering exceptional client
                satisfaction. From stunning UI/UX to robust backend systems and
@@ -42,7 +42,8 @@ const OurServices = () => {
                         background: '#121B2F',
                      }}
                      key={idx}
-                     className="sm:relative flex flex-col text-center items-center border border-[#4d4d4d] bg-[#111B2E] min-h-full px-2 sm:px-6 py-6 rounded-md ">
+                     //border border-gray-700 bg-[#0F1624]
+                     className="sm:relative flex flex-col text-center items-center bg-[#0F1624]/50  min-h-full px-2 sm:px-6 py-6 rounded-md ">
                      {/* bg-[#1a1a1a] */}
                      <div className="absolute top-0.5 left-0.5 mt-1.5 size-auto ml-2 p-1.5 border border-[#4d4d4d] hover:rotate-10 rounded-md max-sm:hidden">
                         {service.icon ?? idx + 1}

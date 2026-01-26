@@ -9,7 +9,7 @@ const Home = () => {
          <div className="sm:basis-2xl xl:basis-4xl">
             <div>
                <div className="flex flex-row max-md:hidden text-md gap-2.5 mb-4">
-                  <div className="bg-[#E6F0FF] rounded-xl hover:bg-[#DCEAFF]">
+                  <div className="bg-[#c0d7f7] rounded-xl hover:bg-[#DCEAFF]">
                      <span className="p-2.5 flex gap-1.5 justify-center items-center text-[#2563EB]">
                         <BriefcaseBusiness
                            size={18}
@@ -18,7 +18,7 @@ const Home = () => {
                         Worked with 0+ clients
                      </span>
                   </div>
-                  <div className="bg-[#E6F0FF] rounded-xl px-2 hover:bg-[#DCEAFF]">
+                  <div className="bg-[#c0d7f7] rounded-xl px-2 hover:bg-[#DCEAFF]">
                      <span className="p-2.5 flex gap-1.5 justify-center items-center text-[#2563EB]">
                         <Sparkles size={16} />
                         Delivered over 0+ projects
@@ -40,7 +40,7 @@ const Home = () => {
                      Get Started
                   </NavLink>
                   <NavLink
-                     className="p-3.5 border border-transparent md:px-10 xl:px-14 rounded-xl hover:px-12 bg-[rgba(255,255,255,0.35)] text-[#E9EEF5] hover:scale-x-105 "
+                     className="p-3.5 border border-transparent md:px-10 xl:px-14 rounded-xl hover:px-12 bg-[rgb(255,255,255)] text-[#E9EEF5] hover:scale-x-105 "
                      to="/services"
                      type="button">
                      View Services
@@ -48,32 +48,7 @@ const Home = () => {
                </div>
             </div>
          </div>
-         <motion.div className="max-sm:hidden ">
-          
-            <span className="text-xl"></span>
-            <motion.h1
-               className="text-4xl font-bold flex"
-               initial="hidden"
-               animate="visible"
-               variants={{
-                  visible: {
-                     transition: {
-                        staggerChildren: 0.08,
-                     },
-                  },
-               }}>
-               {name.split('').map((char, i) => (
-                  <motion.span
-                     key={i}
-                     variants={{
-                        hidden: { opacity: 0, y: 20 },
-                        visible: { opacity: 1, y: 0 },
-                     }}>
-                     {char}
-                  </motion.span>
-               ))}
-            </motion.h1>
-         </motion.div>
+       
       </div>
    );
 };

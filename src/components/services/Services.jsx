@@ -9,7 +9,7 @@ const Services = () => {
                <h1 className="text-5xl 2xl:text-8xl text-[#5FA9F8] mb-1.5">
                   Our Diversified Digital Solutions
                </h1>
-               <p className="text-xl font-mono lg:text-2xl 2xl:text-3xl mb-8 leading-relaxed max-w-4xl 2xl:max-w-5xl  mx-auto p-2">
+               <p className="text-xl font-mono lg:text-2xl 2xl:text-3xl mb-8 leading-relaxed max-w-4xl 2xl:max-w-5xl  mx-auto text-gray-300 p-2">
                   Custom software that scales your business. From full-stack web
                   apps to enterprise systems, we build reliable solutions.
                </p>

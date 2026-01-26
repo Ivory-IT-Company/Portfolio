@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 import { BiSupport } from 'react-icons/bi';
 import { FaBalanceScale, FaShieldAlt, FaUserFriends } from 'react-icons/fa';
 import { GiImpactPoint, GiPriceTag } from 'react-icons/gi';
@@ -51,24 +52,31 @@ const WhyChooseUs = () => {
    return (
       <section className="h-fit md:h-160 flex flex-col justify-center px-6 pt-7 md:px-16">
          <div className="text-center mb-6">
-            <h2 className="text-3xl xl:text-5xl font-bold mb-2.5 text-[#5FA9F8]">
+            <h2 className="text-3xl xl:text-5xl font-bold mb-2.5 md:mb-5 text-[#5FA9F8]">
                Why Choose <span className="font-extrabold">Ivory?</span>
             </h2>
-            <p className="text-sm sm:text-lg uppercase">
-               Definitely, <span className=''>because we offers you the best</span>
+            <p className="text-sm uppercase text-[#c6ccd4]">
+               {/* Definitely, because we offers you the best */}
             </p>
          </div>
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
             {reasons_dict.map((reason, idx) => (
-               <div
-                  className="border border-blue-400 rounded-md p-2.5"
+               <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{
+                     opacity: 0.85,
+
+                     transition: { duration: 0.175 * idx, ease: 'easeInOut' },
+                  }}
+                  // border-blue-400
+                  className="border-gray-500 bg-[#0F1624] rounded-md p-2.5"
                   key={idx}>
                   <span className="inline-block">{reason.icon}</span>
                   <p className="text-xl font-light capitalize pb-2 ">
                      {reason.name}
                   </p>
                   <span className="text-md">{reason.text}</span>
-               </div>
+               </motion.div>
             ))}
          </div>
       </section>
