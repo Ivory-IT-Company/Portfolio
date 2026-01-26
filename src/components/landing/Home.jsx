@@ -5,7 +5,7 @@ import { NavLink } from 'react-router';
 const Home = () => {
    const name = 'Ivory';
    return (
-      <div className="flex flex-row h-screen gap-2 my-4 px-11 sm:px-28 xl:gap-8 xl:px-40 items-center">
+      <div className="flex flex-row h-screen gap-2 my-4 px-11 sm:px-28 xl:gap-8 xl:px-40 2xl:gap-10 items-center">
          <div className="sm:basis-2xl xl:basis-4xl">
             <div>
                <div className="flex flex-row max-md:hidden text-md gap-2.5 mb-4">
@@ -34,13 +34,13 @@ const Home = () => {
                </p>
                <div className="flex flex-col sm:flex-row gap-3 max-sm:px-6  max-md:justify-center text-center">
                   <NavLink
-                     className="bg-[#4F8CFF] p-3.5 md:px-10 xl:px-14 rounded-xl hover:scale-104 hover:bg-[#5a83cf]"
+                     className="bg-[#4F8CFF] p-3.5 md:px-10 xl:px-14 rounded-xl hover:scale-x-101 hover:bg-[#5a83cf]"
                      to="/contact"
                      type="button">
                      Get Started
                   </NavLink>
                   <NavLink
-                     className="p-3.5 border border-transparent md:px-10 xl:px-14 rounded-xl hover:px-12 bg-[rgb(255,255,255)] text-[#E9EEF5] hover:scale-x-105 "
+                     className="p-3.5 md:px-10 xl:px-14 rounded-xl text-gray-200 hover:scale-x-101 bg-gray-400/15 hover:bg-gray-400/10"
                      to="/services"
                      type="button">
                      View Services
@@ -48,7 +48,6 @@ const Home = () => {
                </div>
             </div>
          </div>
-       
       </div>
    );
 };
